@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Identité - Citéclaire</title>
+	<meta charset="UTF-8">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+	<!-- JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/check-device.js"></script>
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">	<!-- a supprimer !!  -->
+	<!-- SEO -->
+	<meta name="title" content="Identité" />
+	<meta name="description" content="Citéclaire" />
+	<!-- SCRIPT -->
+	<script src="assets/js/mapinteractive.js"></script>
+</head>
+<body>
+
+	<!-- DEBUT PAGE -->
+	<div class="row">
+		<header>
+
+			<a href="index.html">
+				<div id="container-logo">
+					<img class="logo" src="assets/img/logo.png">
+					<div class="titrepage">Identité</div>
+				</div>
+			</a>
+			<div id="container-navbar">
+				<nav>
+					<ul>
+						<li class="current"><a href="identite.html">Identité</a></li>
+						<li><a href="concept.html">Concept</a></li>
+						<li><a href="solutions.html">Solutions d'éclairage</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="catalogue.html">Catalogue</a></li>							
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="clear"></div>
+
+
+		<!-- PARTIE GAUCHE -->
+		<div id="page-identite">
+			<div class="col-6">
+				<div style="width:50%; height: 190px;"></div>
+				<div class="container-halfpage-left container-relative">
+					<img class="width-50p shadow-all float-left" src="assets/img/img-identite-min.jpg" />
+					<!-- <div class="textebicolor absolute" data-couleurgauche="white" data-couleurdroite="black" data-textegauche="Pellentesque et porttitor" data-textedroit="dolor.Donec massa" style="top:40px; right:-80px;font-size: 1.2em"></div> -->
+					<div class="title">
+						<h2 id="title">Se rapprocher de ceux que nous éclairons </h2>
+					</div>
+					<p class="float-right width-45p " style="padding-top: 35px;">Chaque mois, le réseau Citéclaire s’intensifie et se rapproche du tissu économique local de chaque département. Nos partenaires franchisés ont tous suivi des formations qualifiantes vous permettant de vous apporter les conseils les plus pointus pour répondre  aux attentes des sociétés ou des collectivités</p>
+					<br>
+					<div class="clear"></div>
+					<br>
+					<br>
+					<br>
+					<div class="row container-relative">
+						<div class="col-12">
+							<p>
+								Depuis 5 ans nous élaborons avec nos partenaires industriels, à travers le monde, nos produits et nous suivons « physiquement » sur place la qualité de fabrication. 
+							</p>
+						</div>
+						<div class="col-5 centrertexte" style="position: absolute; top:-60px; right: 0">
+							<br>
+							<script type="text/javascript">
+								$( document ).ready(function() {
+									//	Placement des points pour la carte interactive
+									var map = new MapInteractive($('div#mapcontainer-france'), {x:300, y: 273}, true, $('table#tableau-france') );
+									map.ajouterPoint(150, 68, '', 10, 'p1');
+									map.ajouterPoint(185, 75, '', 10, 'p2');
+									map.ajouterPoint(255, 200, '', 10, 'p3');
+									map.ajouterPoint(200, 210, '', 10, 'p4');
+									map.ajouterPoint(140, 195, '', 10, 'p5');
+									map.ajouterPoint(125, 202, '', 10, 'p6');
+									map.ajouterPoint(30, 250, '', 10, 'p7');
+									map.afficher();			
+								});
+							</script>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<!-- PARTIE DROITE -->
+			<div class="col-6">
+				<div class="container-cartes">
+					<div class="row">
+						<div class="col-5" id="mapcontainer-france">
+							
+							<img id="carte-france" src="assets/img/carte-france.png" />
+						</div>
+						<div class="col-7" id="mapcontainer-monde">
+							<img id="carte-monde" src="assets/img/carte-monde.png" />
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="row">
+						<div class="col-5">
+							<table id="tableau-france" style="margin-left: 30px">
+								<thead>
+									<tr>
+										<td>TYPE DE PRODUITS<br><br></td>
+										<td>TYPE DE PRODUITS<br><br></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr data-tagpoint="p1">
+										<td>Siège social</td>
+										<td>Aix-en-Provence</td>
+									</tr>
+									<tr data-tagpoint="p2">
+										<td>Techno Centre</td>
+										<td>Toulouse</td>
+									</tr>
+									<tr data-tagpoint="p3">
+										<td>Agences</td>
+										<td></td>
+									</tr>
+									<tr data-tagpoint="p4">
+										<td>Alpes-maritimes</td>
+										<td>Carros</td>
+									</tr>
+									<tr data-tagpoint="p5">
+										<td>Sud-Ouest</td>
+										<td>Rodez</td>
+									</tr>
+									<tr data-tagpoint="p6">
+										<td>Est</td>
+										<td>Heillecourt</td>
+									</tr>
+									<tr data-tagpoint="p7">
+										<td>Île-de-France</td>
+										<td>Paris</td>
+									</tr>
+									<tr data-tagpoint="p1">
+										<td>Réunion et Mayotte</td>
+										<td>Saint-Gilles</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-7">
+							<table id="tableau-monde">
+								<thead>
+									<tr>
+										<td>type de produit<br><br></td>
+										<td>pays de production<br><br></td>
+										<td>ville<br><br></td>
+										<td>Contrôle qualité<br><br></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr data-tagpoint="p1">
+										<td>Tertiaire</td>
+										<td>France</td>
+										<td>Barentin</td>
+										<td>Toulouse</td>
+									</tr>
+									<tr data-tagpoint="p2">
+										<td>Tertiaire</td>
+										<td>Bulgarie</td>
+										<td>Sofia</td>
+										<td>Agent local</td>
+									</tr>
+									<tr data-tagpoint="p3">
+										<td>Tertiaire</td>
+										<td>Pologne</td>
+										<td>Sroda</td>
+										<td>Agent local</td>
+									</tr>
+									<tr data-tagpoint="p4">
+										<td>Public Retrofit</td>
+										<td>Espagne</td>
+										<td>Murcia</td>
+										<td>Agent local & équipe Citéclaire</td>
+									</tr>
+									<tr data-tagpoint="p5">
+										<td>Public Ornella</td>
+										<td>France</td>
+										<td>Heillecourt</td>
+										<td>Toulouse</td>
+									</tr>
+									<tr data-tagpoint="p6">
+										<td>Public luminaire</td>
+										<td>Chine</td>
+										<td>Shenzhen</td>
+										<td>Equipe Citéclaire sur place</td>
+									</tr>
+									<tr data-tagpoint="p7">
+										<td>Public Solaire</td>
+										<td>Chine</td>
+										<td>Shangaï</td>
+										<td>Equipe Citéclaire sur place</td>
+									</tr>
+									<tr data-tagpoint="p8">
+										<td>Public Sources</td>
+										<td>Chine</td>
+										<td>Shenzhen</td>
+										<td>Equipe Citéclaire sur place</td>
+									</tr>
+									<tr data-tagpoint="p9">
+										<td>Public Urbain</td>
+										<td>Serbie</td>
+										<td>Belgrade</td>
+										<td>Agent local</td>
+									</tr>
+									<tr data-tagpoint="p10">
+										<td>Public Urbain connecté</td>
+										<td>Etats-Unis</td>
+										<td>New-York</td>
+										<td>Toulouse</td>
+									</tr>
+									</tbody>
+							</table>
+						</div>
+						<div class="clear"></div>
+					</div>
+					</div>
+					<div class="row">
+						<div class="col-8">	
+							<script type="text/javascript">
+								$( document ).ready(function() {
+									//	Placement des points pour la carte interactive
+									var map = new MapInteractive($('div#mapcontainer-monde'), {x:400, y: 227}, true, $('table#tableau-monde') );
+									map.ajouterPoint(115, 85, '', 7, 'p1');
+									map.ajouterPoint(192, 89, '', 7, 'p2');
+									map.ajouterPoint(202, 80, '', 7, 'p3');
+									map.ajouterPoint(196, 77, '', 7, 'p4');
+									map.ajouterPoint(200, 72, '', 7, 'p5');
+									map.ajouterPoint(215, 70, '', 7, 'p6');
+									map.ajouterPoint(222, 77, '', 7, 'p7');
+									map.ajouterPoint(226, 81, '', 7, 'p8');
+									map.ajouterPoint(335, 110, '', 7, 'p9');
+									map.ajouterPoint(325, 105, '', 7, 'p10');
+									map.ajouterPoint(325, 115, '', 7, 'p11');
+
+									map.afficher();			
+								});
+							</script>
+
+
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-8">
+							</div>
+							<div class="col-4">
+								<div class="titreonglet"><a href="#">Découvrez le concept</a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div id="filigrane">Identité</div>
+		</div>
+
+	</div>
+	<!-- FIN PAGE -->
+
+	<!-- FOOTER -->
+	<footer>
+		<ul>
+			<section class="left">
+				<li><a href="actualites.html">Actualités et références</a></li>
+				<li><a href="telechargements.html">Téléchargements</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</section>
+			<section class="right">
+				<li id="white"><a href="mentionslegales.html">Mentions legales</a> ─ © Citéclaire 2019</li>
+			</section>
+		</ul>
+	</footer>
+
+	<!-- JAVASCRIPT FOOTER -->
+	<script src="assets/js/citeclaire.js"></script>
+
+</body>
+</html>

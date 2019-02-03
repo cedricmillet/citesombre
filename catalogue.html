@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Catalogue - Citéclaire</title>
+	<meta charset="UTF-8">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+	<!-- JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/carroussel.js"></script>
+	<script src="assets/js/check-device.js"></script>
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!-- SEO -->
+	<meta name="title" content="Catalogue" />
+	<meta name="description" content="Citéclaire" />
+</head>
+<body>
+
+	<!-- DEBUT PAGE -->
+	<div class="row">
+		<header>
+			<a href="index.html">
+				<div id="container-logo">
+					<img class="logo" src="assets/img/logo.png">
+					<div class="titrepage">Catalogue</div>
+				</div>
+			</a>
+			<div id="container-navbar">
+				<nav>
+					<ul>
+						<li><a href="identite.html">Identité</a></li>
+						<li><a href="concept.html">Concept</a></li>
+						<li><a href="solutions.html">Solutions d'éclairage</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li class="current"><a href="catalogue.html">Catalogue</a></li>							
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="clear"></div>
+
+
+		<!-- PARTIE GAUCHE -->
+		<div id="page-catalogue">
+			<div class="col-7">
+				<div style="width:50%; height: 190px;"></div>
+				<div class="container-halfpage-left">
+					<div class="row">
+						<div class="col-5">
+							<div id="menu-catalogue">
+								<ul>
+									<li>
+										<ul>
+											GAMME 1
+											<li class="item margeseparation"><a href="#">Public</a></li>
+											<li class="item"><a href="#">Tertiaire</a></li>
+											<li class="item"><a href="#">Architectural</a></li>
+											<li class="item current"><a href="#">Mobilier urbain</a></li>
+											<li class="item"><a href="#">LED</a></li>
+											<li class="item"><a href="#">Solaire</a></li>
+										</ul>
+									</li>
+
+									<li>
+										<ul>
+											GAMME 2
+											<li class="item margeseparation"><a href="#">Public</a></li>
+											<li class="item"><a href="#">Tertiaire</a></li>
+											<li class="item"><a href="#">Architectural</a></li>
+											<li class="item"><a href="#">Mobilier urbain</a></li>
+											<li class="item"><a href="#">LED</a></li>
+											<li class="item"><a href="#">Solaire</a></li>
+										</ul>
+									</li>
+									<li class="item"><a href="#">ACCESSOIRES</a></li>
+									<li class="item margeseparation"><a href="#">CATALOGUE</a></li>
+								</ul>
+							</div>
+
+
+						</div>
+						<div class="col-7">
+							<div id="container-boutique">
+								<div id="soustitregamme">Mobilier urbain</div>
+								<div id="titregamme">Gamme 1</div>
+								<p>
+									Lorem ipsum dolor sit amen; CarpeDIem, ave caesar morituri te salutant, quenavo. Alea jacta est. Tu quoque mi fili.
+								</p>
+								<div id="container-products">
+									<div class="product">
+										<a href="produit.html">
+											<img src="assets/img/product_img.jpg" />
+											<div class="title">Nom du produit</div>
+											<div class="type">Type</div>
+										</a>
+									</div>
+									<div class="product">
+										<a href="produit.html">
+											<img src="assets/img/product_img.jpg" />
+											<div class="title">Nom du produit</div>
+											<div class="type">Type</div>
+										</a>
+									</div>
+									<div class="product">
+										<a href="produit.html">
+											<img src="assets/img/product_img.jpg" />
+											<div class="title">Nom du produit</div>
+											<div class="type">Type</div>
+										</a>
+									</div>
+									<div class="product">
+										<a href="produit.html">
+											<img src="assets/img/product_img.jpg" />
+											<div class="title">Nom du produit</div>
+											<div class="type">Type</div>
+										</a>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- PARTIE DROITE -->
+			<div class="col-5 shadow-left">
+				<img id="image_carroussel" class="img-halfpage" src="assets/img/catalogue-slide-1-min.jpg" />
+				<script type="text/javascript">
+					var carroussel = new CarrousselCatalogue('#image_carroussel');
+					carroussel.ajouterImage("assets/img/catalogue-slide-1-min.jpg");	//on ajoute une image au carroussel, ici la premiere image ets la meme que img#image_carroussel
+					carroussel.ajouterImage("assets/img/catalogue-slide-5-min.jpg");	//on ajoute la deuxieme imaeg du carroussel, on peut en ajouter autant que l'on veut
+					carroussel.setIntervalleSlides(5000);	//intervalle entre chaque slide, en milliseconde
+					carroussel.lancer(); //on lance le carroussel
+				</script>
+			</div>
+		</div>
+
+	</div>
+	<!-- FIN PAGE -->
+
+	<!-- FOOTER -->
+	<footer>
+		<ul>
+			<section class="left">
+				<li><a href="actualites.html">Actualités et références</a></li>
+				<li><a href="telechargements.html">Téléchargements</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</section>
+			<section class="right">
+				<li id="white"><a href="#" id="white">Mentions legales</a> ─ © Citéclaire 2019</li>
+			</section>
+		</ul>
+	</footer>
+
+	<!-- JAVASCRIPT FOOTER -->
+	<script src="assets/js/citeclaire.js"></script>
+
+</body>
+</html>

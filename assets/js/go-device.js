@@ -1,0 +1,1 @@
+//deplacé dans check-device.js
